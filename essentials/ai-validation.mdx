@@ -1,0 +1,28 @@
+---
+title: "AI Validation"
+description: "Assert text, states, and counts. Works standalone or after extraction."
+icon: "check-double"
+---
+
+## When to use
+
+Use Validation to verify content and UI state. Validation can work without prior extraction, or validate fields extracted earlier.
+
+## Numeric values use {{value}}
+
+Numbers in schemas use double‑brace formatting: `{{10}}`.
+
+## Examples
+
+Standalone:
+
+```text
+validate that page title is Login
+```
+
+After extraction (matching field names):
+
+```text
+validate that appleCount equals {{40}}
+```
+

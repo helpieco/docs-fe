@@ -1,0 +1,21 @@
+---
+title: "AI Extraction"
+description: "Extract structured data from the page into a schema."
+icon: "database"
+---
+
+## When to use
+
+Use Extraction to collect values from the page so they can be validated or reused later.
+
+## Define a schema
+
+Provide field names and types that describe the expected data.
+
+## Examples
+
+```text
+extract number of items in the cart -> { "itemCount": { "type": "number" } }
+extract page title -> { "pageTitle": { "type": "string" } }
+```
+

@@ -1,0 +1,48 @@
+---
+title: "Create a workflow"
+description: "Generate workflows from a prompt, reference secrets and CSV data, and save."
+icon: "plus"
+---
+
+## Generate from a prompt
+
+Describe what you want to test and Arcetix will propose an executable workflow. You can run it as‑is or edit steps before saving.
+
+Tips when writing prompts:
+
+- Be specific about targets: button labels, field names, and expected outcomes
+- Use separate steps for each interaction (click, type, select)
+- Prefer descriptive identifiers over colors or positions
+
+## Use secrets in prompts and steps
+
+Insert saved secrets anywhere using `%KEY%` syntax. For example:
+
+```text
+type %email% into the email field
+type %password% into the password field
+```
+
+## Use CSV data
+
+Upload a CSV while generating and reference columns with `@filename/column`:
+
+```text
+login as @users.csv/email with password %password%
+```
+
+## Node types
+
+Workflows are built from nodes:
+
+- Action: user interactions (click, type, select)
+- Extraction: collect data from the page into a schema
+- Validation: assert content, states, and counts
+- Agent: delegate multi‑step reasoning
+
+See detailed guides in AI Action, AI Extraction, AI Validation, and AI Agent.
+
+## Save and open
+
+After reviewing the AI summary, save to create the workflow. You’ll land on the workflow dashboard where you can run, monitor logs, and schedule.
+

@@ -1,97 +1,37 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Welcome to Arcetix"
+description: "We transform testing from a bottleneck into a fast, collaborative process by turning test creation into a simple conversation with AI."
 ---
 
-## Setting up
+## What is Arcetix?
 
-Get your documentation site up and running in minutes.
+Arcetix is an AI-powered platform for creating, running, and scheduling end‑to‑end tests as visual workflows.
+Describe what you want to test in plain English and Arcetix generates an executable workflow you can review and run.
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+Workflows are built from nodes:
 
-## Make it yours
+- Action: user interactions like clicks, typing, and selections
+- Extraction: collect data from the page into a structured schema
+- Validation: assert content, states, and counts (numbers use {{value}} syntax)
+- Agent: delegate multi‑step reasoning when needed
 
-Design a docs site that looks great and empowers your users.
+Use secrets (%KEY%) and CSV data (@file/column) directly in prompts and steps. Run on demand or schedule recurring runs, then monitor status and logs.
+
+## Essential guides
 
 <Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
+  <Card title="Create a workflow" icon="plus" href="/essentials/workflows">
+    Generate workflows from a prompt, use secrets and CSV data.
   </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
+  <Card title="Runs" icon="clock" href="/essentials/runs">
+    Start, schedule, and monitor workflow runs.
   </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+  <Card title="AI nodes" icon="sparkles" href="/essentials/ai-action">
+    Learn Action, Extraction, Validation, and Agent nodes.
   </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
+  <Card title="API reference" icon="terminal" href="/api-reference/introduction">
+    Explore endpoints and integrate Arcetix into your pipelines.
   </Card>
 </Columns>
 
-## Create beautiful pages
 
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
